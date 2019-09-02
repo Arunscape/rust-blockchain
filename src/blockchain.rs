@@ -109,7 +109,7 @@ impl Chain{
 
         Chain::proof_of_work(&mut block.header);
 
-        println!("{:?}", &block);
+        println!("{:#?}", &block);
         self.chain.push(block);
         
         true
